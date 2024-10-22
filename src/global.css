@@ -10,5 +10,6 @@ html, body {
     width: 100%;
     }
     body {
-    background-color: #badbad ; /* например тут, можно сделать фон */
+    
+    background-image: url("D:\sveta\ui\src\components\background.jpg");
 }
