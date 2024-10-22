@@ -9,8 +9,8 @@ const navigate = useNavigate();
         <Button onClick={() => navigate('/')}>
         Home
         </Button>
-        <Button onClick={() => navigate('/about')}>
-        About
+        <Button onClick={() => navigate('/catalog')}>
+        Catalog
         </Button>
       </Flex>
     </Box>
