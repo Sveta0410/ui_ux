@@ -2,7 +2,9 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import { Button} from 'antd';
 import { Breadcrumb, Layout, Menu, theme } from 'antd';
-const { Header, Content, Footer } = Layout;
+const { Header, Content, Footer } = Layout; 
+
+
 // import { Header } from './components/header';
 // import { Button } from '../components/button';
 // import { Box, Text, Button } from '@chakra-ui/react';
@@ -14,6 +16,7 @@ const { Header, Content, Footer } = Layout;
 
 export const Home = () =>{
     return (
+      
 //       <div>
 //         <Button className="home_button" type="link" href="/catalog" style={{ marginTop: 16 }} >
 //                 Страница каталога
@@ -24,7 +27,8 @@ export const Home = () =>{
 //          </Button>
 //
 //       </div>
-
+<>
+       
     <Layout style={{ minHeight: '100vh', minWidth: '100vh',  background: 'transparent' }}t>
       <Header
         style={{
@@ -77,4 +81,5 @@ export const Home = () =>{
         SofToy ©{new Date().getFullYear()} Created by Sveta
       </Footer>
     </Layout>
+    </>
 )}
