@@ -1,4 +1,4 @@
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import styles from './header.module.css';
 import React from 'react';
 import { Flower } from 'lucide-react';
@@ -13,16 +13,17 @@ export const Header = () => {
                 <nav>
                 
                     <ul className={styles.navList}>
-                        <Flower color="#ffffff"  size={50} strokeWidth={1}/>
-
-                        <div className={styles.logo} onClick={() => navigate('/')}>
-                            <div className={styles.text}>SofToy</div>
+                    
+                        <div className={styles.headerName}>
+                            <Flower color="#ffffff"  size={50} strokeWidth={1}/>
+                            <Link to="/" className={styles.headerTitle}>SofToy</Link>
                         </div>
+                    
                         <li className={styles.navItem}>
                             <button onClick={() => navigate('/catalog')}>Каталог</button>
                         </li>
                         <li className={styles.navItem}>
-                            <button onClick={() => navigate('/')}>Главная</button>
+                            <button onClick={() => navigate('/')}>О нас</button>
                         </li>
              
                         <li className={styles.navItem}>

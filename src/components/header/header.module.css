@@ -1,21 +1,21 @@
 .header {
     padding: 20px;
-    position: relative;
-    z-index: 1;
+    display: flex;
 }
 
 
 .navList {
     display: flex;
     justify-content: center;
+    align-items: center;
     padding: 0 40px;
     list-style: none;
 }
 
 
 .navItem {
-    margin-right: 20px;
-    margin-left: 20px;
+    margin-right: 5px;
+    margin-left: 5px;
 }
 
 
@@ -36,11 +36,17 @@
 }
 
 
-.text {
-    position: absolute; /* Абсолютное позиционирование */
-    left: 0; /* Выравнивание слева */
-    margin-left: 50px;
-    color: white;
+
+.headerTitle {
+    margin-left: 10px;
     font-family: "Montez";
-    font-size: 46px;
+    font-size: 50px;
+    color: white;
+    text-decoration: none;
+}
+
+.headerName {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
 }
