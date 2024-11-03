@@ -18,6 +18,13 @@ function Home() {
         />
         <Col span={32}></Col>
   </Flex>
+  <h1></h1>
+  <p>, </p>
+  <p></p>
+  <p>, </p>
+  <p></p>
+  <p> .</p>
+  <p></p>
   {/* </Space> */}
     </div>
  );
