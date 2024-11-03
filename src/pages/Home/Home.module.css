@@ -1,0 +1,35 @@
+.shop {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 150px;
+}
+
+.shopInfo {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.mainSection{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.name {
+    margin: 0;
+    font-family: "Montez";
+    font-size: 85px;
+    color: white;
+    text-decoration: none;
+   
+}
+
+.mainImage{
+    border-radius: 30px;
+}

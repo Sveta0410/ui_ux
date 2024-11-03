@@ -1,11 +1,17 @@
 import React from "react";
 import { Col, Flex, Image, Space, Typography  } from 'antd';
 const { Title } = Typography;
+import styles from './home.module.css';
+import mainToy from '/src/assets/doll.jpg';
 
 function Home() {
  return (
     /* <div style={{ display: 'flex', justifyContent: 'space-around', alignItems: 'center', height: '75vh'}}> */
     <div >
+        <div className={styles.mainSection}>
+            <p className={styles.name}>SofToy</p>
+            <img src={mainToy} alt="MainToy" className={styles.mainImage}></img>
+        </div>
         {/* <Space align="center"> */}
         <Flex gap="middle" justify='space-around' align='center'>
         <Col span={32}></Col>
@@ -19,6 +25,12 @@ function Home() {
         <Col span={32}></Col>
   </Flex>
   <h1></h1>
+  <p>, </p>
+  <p></p>
+  <p>, </p>
+  <p></p>
+  <p> .</p>
+  <p></p>
   <p>, </p>
   <p></p>
   <p>, </p>
