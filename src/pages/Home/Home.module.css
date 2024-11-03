@@ -18,13 +18,15 @@
     display: flex;
     width: 100%;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
+    margin: 70px 0px;
+
 }
 
 .name {
     margin: 0;
     font-family: "Montez";
-    font-size: 85px;
+    font-size: 130px;
     color: white;
     text-decoration: none;
    
@@ -32,4 +34,5 @@
 
 .mainImage{
     border-radius: 30px;
+    width: 500px;
 }
