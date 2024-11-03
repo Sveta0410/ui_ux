@@ -1,0 +1,7 @@
+.catalog {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 150px;
+    color: white;
+}
