@@ -8,30 +8,34 @@ function Catalog() {
     return (
         <div>
             <div className={styles.catalog}>
-                <h1>Каталог</h1>
-                <p><Link to="/product" >Товар</Link></p>
-                <div className={styles.rectangle}>
-                <img src={toy_0} alt="toy" className={styles.image}></img>
-                <p className={styles.price}>2500 ₽</p>
-                <p className={styles.description}>Кукла Розалин</p>
+                <div className={styles.filtersRectangle}>
+                    <div className={styles.filtersNameRectangle}>
+                        <p className={styles.filterMain}>Фильтры</p>
+                    </div>
+
+                </div>
+
+                <div className={styles.productRectangle}>
+                    <img src={toy_0} alt="toy" className={styles.image}></img>
+                    <p className={styles.price}>2500 ₽</p>
+                    <Link to="/product" className={styles.description} >Кукла Розалин</Link>
+                </div>
+                <div className={styles.productRectangle}>
+                    <img src={toy_0} alt="toy" className={styles.image}></img>
+                    <p className={styles.price}>2500 ₽</p>
+                    <Link to="/product" className={styles.description} >Кукла Розалин</Link>
+                </div>
+                <div className={styles.productRectangle}>
+                    <img src={toy_0} alt="toy" className={styles.image}></img>
+                    <p className={styles.price}>2500 ₽</p>
+                    <Link to="/product" className={styles.description} >Кукла Розалин</Link>
+                </div>
+                <div className={styles.productRectangle}>
+                    <img src={toy_0} alt="toy" className={styles.image}></img>
+                    <p className={styles.price}>2500 ₽</p>
+                    <Link to="/product" className={styles.description} >Кукла Розалин</Link>
+                </div>
             </div>
-            <div className={styles.rectangle}>
-                <img src={toy_0} alt="toy" className={styles.image}></img>
-                <p className={styles.price}>2500 ₽</p>
-                <p className={styles.description}>Кукла Розалин</p>
-            </div>
-            <div className={styles.rectangle}>
-                <img src={toy_0} alt="toy" className={styles.image}></img>
-                <p className={styles.price}>2500 ₽</p>
-                <p className={styles.description}>Кукла Розалин</p>
-            </div>
-            <div className={styles.rectangle}>
-                <img src={toy_0} alt="toy" className={styles.image}></img>
-                <p className={styles.price}>2500 ₽</p>
-                <p className={styles.description}>Кукла Розалин</p>
-            </div>
-            </div>
-            
        </div>
     );
    }
