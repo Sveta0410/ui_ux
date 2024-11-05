@@ -14,6 +14,7 @@ import octopus from '/src/assets/toys/octopus.png';
 import tiny_bunny from '/src/assets/toys/tiny_bunny.png';
 import tiny_frog from '/src/assets/toys/tiny_frog.png';
 import { Link } from "react-router-dom";
+import { ChevronDown  } from 'lucide-react';
 
 function Catalog() {
     return (
@@ -21,8 +22,27 @@ function Catalog() {
             <div className={styles.catalog}>
                 <div className={styles.filtersRectangle}>
                     <div className={styles.filtersNameRectangle}>
-                        <p className={styles.filterMain}>Фильтры</p>
+                        <p className={styles.filterMain}>Фильтры</p> 
                     </div>
+                    <div className={styles.filterList}>
+                        <div className={styles.filterListElem}>
+                            <ChevronDown color="black" size={25} strokeWidth={1}/>
+                            <p className={styles.filterName}>Тип</p>
+                        </div>
+                        <div className={styles.filterListElem}>
+                            <ChevronDown color="black" size={25} strokeWidth={1}/>
+                            <p className={styles.filterName}>Цена</p>
+                        </div>
+                        <div className={styles.filterListElem}>
+                            <ChevronDown color="black" size={25} strokeWidth={1}/>
+                            <p className={styles.filterName}>Размер</p>
+                        </div>
+                        <div className={styles.filterListElem}>
+                            <ChevronDown color="black" size={25} strokeWidth={1}/>
+                            <p className={styles.filterName}>Цвет</p>
+                        </div>
+
+                    </div> 
                 </div>
                 <div className={styles.products}>
                     <div className={styles.productRow}>
