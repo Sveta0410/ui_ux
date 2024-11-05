@@ -1,4 +1,3 @@
-import { Button } from "antd";
 import React from "react";
 import styles from './catalog.module.css';
 import bear from '/src/assets/toys/bear.png';
@@ -16,6 +15,21 @@ import tiny_frog from '/src/assets/toys/tiny_frog.png';
 import { Link } from "react-router-dom";
 import { ChevronDown  } from 'lucide-react';
 
+const FilterElem = ({ elemName }) => (
+    <div className={styles.filterListElem}>
+        <ChevronDown color="black" size={25} strokeWidth={1}/>
+        <p className={styles.filterName}>{elemName}</p>
+    </div>
+);
+
+const ProductElem = ({ image, price, description}) => (
+    <div className={styles.productRectangle}>
+        <img src={image} alt="toy" className={styles.image}></img>
+        <p className={styles.price}>{price} ₽</p>
+        <Link to="/product" className={styles.description} >{description}</Link>
+    </div>
+);
+
 function Catalog() {
     return (
         <div>
@@ -25,92 +39,79 @@ function Catalog() {
                         <p className={styles.filterMain}>Фильтры</p> 
                     </div>
                     <div className={styles.filterList}>
-                        <div className={styles.filterListElem}>
-                            <ChevronDown color="black" size={25} strokeWidth={1}/>
-                            <p className={styles.filterName}>Тип</p>
-                        </div>
-                        <div className={styles.filterListElem}>
-                            <ChevronDown color="black" size={25} strokeWidth={1}/>
-                            <p className={styles.filterName}>Цена</p>
-                        </div>
-                        <div className={styles.filterListElem}>
-                            <ChevronDown color="black" size={25} strokeWidth={1}/>
-                            <p className={styles.filterName}>Размер</p>
-                        </div>
-                        <div className={styles.filterListElem}>
-                            <ChevronDown color="black" size={25} strokeWidth={1}/>
-                            <p className={styles.filterName}>Цвет</p>
-                        </div>
-
+                        <FilterElem elemName="Тип" />
+                        <FilterElem elemName="Цена" />
+                        <FilterElem elemName="Размер" />
+                        <FilterElem elemName="Цвет" />
                     </div> 
                 </div>
                 <div className={styles.products}>
                     <div className={styles.productRow}>
-                        <div className={styles.productRectangle}>
-                            <img src={cow} alt="toy" className={styles.image}></img>
-                            <p className={styles.price}>1000 ₽</p>
-                            <Link to="/product" className={styles.description} >Розовая коровка</Link>
-                        </div>
-                        <div className={styles.productRectangle}>
-                            <img src={dino} alt="toy" className={styles.image}></img>
-                            <p className={styles.price}>350 ₽</p>
-                            <Link to="/product" className={styles.description} >Динозаврик Жора</Link>
-                        </div>
-                        <div className={styles.productRectangle}>
-                            <img src={mouse} alt="toy" className={styles.image}></img>
-                            <p className={styles.price}>350 ₽</p>
-                            <Link to="/product" className={styles.description} >Мышка</Link>
-                        </div>
-                        <div className={styles.productRectangle}>
-                            <img src={tiny_frog} alt="toy" className={styles.image}></img>
-                            <p className={styles.price}>250 ₽</p>
-                            <Link to="/product" className={styles.description} >Мини лягушка</Link>
-                        </div>
+                        <ProductElem 
+                            image={cow}
+                            price="1000"
+                            description="Розовая коровка"
+                        />
+                        <ProductElem 
+                            image={dino}
+                            price="350"
+                            description="Динозаврик Жора"
+                        />
+                        <ProductElem 
+                            image={mouse}
+                            price="350"
+                            description="Мышка"
+                        />
+                        <ProductElem 
+                            image={tiny_frog}
+                            price="250"
+                            description="Мини лягушка"
+                        />
                     </div>
                     <div className={styles.productRow}>
-                        <div className={styles.productRectangle}>
-                            <img src={doll} alt="toy" className={styles.image}></img>
-                            <p className={styles.price}>2500 ₽</p>
-                            <Link to="/product" className={styles.description} >Кукла Розалин</Link>
-                        </div>
-                        <div className={styles.productRectangle}>
-                            <img src={tiny_bunny} alt="toy" className={styles.image}></img>
-                            <p className={styles.price}>2000 ₽</p>
-                            <Link to="/product" className={styles.description} >Кролик малыш</Link>
-                        </div>
-                        <div className={styles.productRectangle}>
-                            <img src={frog} alt="toy" className={styles.image}></img>
-                            <p className={styles.price}>400 ₽</p>
-                            <Link to="/product" className={styles.description} >Весёлая лягушка</Link>
-                        </div>
-                        <div className={styles.productRectangle}>
-                            <img src={flower_coaster} alt="toy" className={styles.image}></img>
-                            <p className={styles.price}>1000 ₽</p>
-                            <Link to="/product" className={styles.description} >Подставка весенняя</Link>
-                        </div>
+                        <ProductElem 
+                            image={doll}
+                            price="2500"
+                            description="Кукла Розалин"
+                        />
+                        <ProductElem 
+                            image={tiny_bunny}
+                            price="2000"
+                            description="Кролик малыш"
+                        />
+                        <ProductElem 
+                            image={frog}
+                            price="400"
+                            description="Весёлая лягушка"
+                        />
+                        <ProductElem 
+                            image={flower_coaster}
+                            price="1000"
+                            description="Подставка весенняя"
+                        />
                     </div>
 
                     <div className={styles.productRow}>
-                        <div className={styles.productRectangle}>
-                            <img src={octopus} alt="toy" className={styles.image}></img>
-                            <p className={styles.price}>700 ₽</p>
-                            <Link to="/product" className={styles.description} >Медуза Марина</Link>
-                        </div>
-                        <div className={styles.productRectangle}>
-                            <img src={frog_small} alt="toy" className={styles.image}></img>
-                            <p className={styles.price}>2300 ₽</p>
-                            <Link to="/product" className={styles.description} >Лягушка-квакушка</Link>
-                        </div>
-                        <div className={styles.productRectangle}>
-                            <img src={bear} alt="toy" className={styles.image}></img>
-                            <p className={styles.price}>1000 ₽</p>
-                            <Link to="/product" className={styles.description} >Мишка</Link>
-                        </div>
-                        <div className={styles.productRectangle}>
-                            <img src={bunny} alt="toy" className={styles.image}></img>
-                            <p className={styles.price}>1700 ₽</p>
-                            <Link to="/product" className={styles.description} >Зайка Настя</Link>
-                        </div>
+                        <ProductElem 
+                            image={octopus}
+                            price="700"
+                            description="Медуза Марина"
+                        />
+                        <ProductElem 
+                            image={frog_small}
+                            price="2300"
+                            description="Лягушка-квакушка"
+                        />
+                        <ProductElem 
+                            image={bear}
+                            price="1000"
+                            description="Мишка"
+                        />
+                        <ProductElem 
+                            image={bunny}
+                            price="1700"
+                            description="Зайка Настя"
+                        />
                     </div>
                 </div>
             </div>
