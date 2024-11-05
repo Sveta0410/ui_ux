@@ -13,7 +13,7 @@ import octopus from '/src/assets/toys/octopus.png';
 import tiny_bunny from '/src/assets/toys/tiny_bunny.png';
 import tiny_frog from '/src/assets/toys/tiny_frog.png';
 import { Link } from "react-router-dom";
-import { ChevronDown  } from 'lucide-react';
+import { ChevronDown, ShoppingCart } from 'lucide-react';
 
 const FilterElem = ({ elemName }) => (
     <div className={styles.filterListElem}>
@@ -25,7 +25,13 @@ const FilterElem = ({ elemName }) => (
 const ProductElem = ({ image, price, description}) => (
     <div className={styles.productRectangle}>
         <img src={image} alt="toy" className={styles.image}></img>
-        <p className={styles.price}>{price} ₽</p>
+        <div className={styles.priceAndBuy}>
+            <p className={styles.price}>{price} ₽</p>
+            <button>
+                <ShoppingCart color="#5c8f62" size={25} strokeWidth={1.7}/>
+            </button>
+            
+        </div>
         <Link to="/product" className={styles.description} >{description}</Link>
     </div>
 );
