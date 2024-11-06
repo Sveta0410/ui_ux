@@ -27,7 +27,7 @@ function Catalog() {
                         id={product.id}
                         image={product.url}
                         price={product.price}
-                        description={product.description}
+                        title={product.title}
                     />
                     ))}
                 </div>
