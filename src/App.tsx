@@ -14,7 +14,7 @@ return (
             <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/catalog" element={<Catalog />} />
-            <Route path="/product" element={<Product />} />
+            <Route path="/product/:id" element={<Product />} />
             </Routes>
             <Footer />
         </Layout>

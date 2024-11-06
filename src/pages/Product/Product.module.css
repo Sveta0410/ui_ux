@@ -1,0 +1,17 @@
+.productPage {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 20px;
+    color: white;
+}
+
+.productInfoRectangle {
+    display: flex;
+    flex-direction: column;
+    width: 210px;
+    height: 270px;
+    background: white;
+    border-radius: 30px;
+    margin: 10px;
+}

@@ -4,7 +4,7 @@ import React from 'react';
 import { Flower } from 'lucide-react';
 
 
-const Footer: React.FC = () => {
+const Footer = () => {
     return (
         <footer className={styles.footer}>
             <div className={styles.footerContent}>
