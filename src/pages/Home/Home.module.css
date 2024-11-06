@@ -3,7 +3,7 @@
     width: 100%;
     align-items: center;
     justify-content: space-around;
-    padding: 70px 0px 150px 0;
+    padding: 70px 0;
 
 }
 
@@ -25,6 +25,7 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
+    padding: 80px 20px 0;
 }
 
 .bestHeaderBlock{
@@ -38,11 +39,10 @@
     margin: auto;
 }
 
-.bestHeader{
-    font-family: "Inter";
+.homeHeader{
+    font-family: "Inter", sans-serif;
     font-size: 32px;
     color: white;
-
 }
 
 .bestProducts{
@@ -52,5 +52,53 @@
     align-items: center;
     justify-content: space-around;
     margin: 40px 0;
-    margin-right: 20px;
+}
+
+.aboutUsSection{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-bottom: 170px;
+}
+
+.aboutUsImage{
+    height: 300px;
+}
+
+.aboutUsTextSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutHeaderBlock{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 320px;
+    height: 60px;
+    background: #5c8f62;
+    border-radius: 30px;
+}
+
+.aboutTextBlock{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 685px;
+    height: 225px;
+    background: white;
+    border-radius: 30px;
+    margin: 25px;
+}
+
+.homeText{
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    color: black;
+    font-weight: 200;
+    text-align: center;
+    margin: 25px;
 }
