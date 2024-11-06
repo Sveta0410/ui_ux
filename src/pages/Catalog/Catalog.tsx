@@ -21,14 +21,15 @@ function Catalog() {
                     </div> 
                 </div>
                 <div className={styles.products}>
-                {Products.map((product) => (
-        <ProductCard
-          id={product.id}
-          image={product.url}
-          price={product.price}
-          description={product.description}
-        />
-      ))}
+                    {Products.map((product) => (
+                    <ProductCard
+                        key={product.id}
+                        id={product.id}
+                        image={product.url}
+                        price={product.price}
+                        description={product.description}
+                    />
+                    ))}
                 </div>
             </div>
        </div>
