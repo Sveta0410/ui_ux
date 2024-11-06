@@ -3,7 +3,7 @@
     width: 100%;
     align-items: center;
     justify-content: space-around;
-    margin: 70px 0px;
+    padding: 70px 0px 150px 0;
 
 }
 
@@ -19,4 +19,38 @@
 .mainImage{
     border-radius: 30px;
     width: 500px;
+}
+
+.bestSection{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.bestHeaderBlock{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 320px;
+    height: 60px;
+    background: #5c8f62;
+    border-radius: 30px;
+    margin: auto;
+}
+
+.bestHeader{
+    font-family: "Inter";
+    font-size: 32px;
+    color: white;
+
+}
+
+.bestProducts{
+    margin: auto;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    margin: 40px 0;
+    margin-right: 20px;
 }

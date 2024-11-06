@@ -19,6 +19,7 @@
     font-size: 50px;
     color: white;
     text-decoration: none;
+    width: 110px;
 }
 
 .footerColumns {
@@ -31,13 +32,13 @@
 
 .footerColumn {
     text-align: left;
+    width: 110px;
 }
 
 .footerName {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    margin: 20px;
 }
 
 .footerLink {

@@ -1,9 +1,8 @@
 import React from "react";
 import styles from './home.module.css';
 import mainToy from '/src/assets/doll.jpg';
-import frogBest from '/src/assets/bestToys/frogBest.svg';
-import bunnyBest from '/src/assets/bestToys/bunnyBest.svg';
-import smallBunnyBest from '/src/assets/bestToys/smallBunnyBest.svg';
+import BestProduct from "../../components/bestProduct";
+import { BestProducts } from "../../consts/bestProducts";
 
 function Home() {
  return (
@@ -12,12 +11,20 @@ function Home() {
             <p className={styles.name}>SofToy</p>
             <img src={mainToy} alt="MainToy" className={styles.mainImage}></img>
         </div>
-        <div className={styles.bestHeader}>
-
+        <div className={styles.bestSection}>
+            <div className={styles.bestHeaderBlock}>
+                <p  className={styles.bestHeader}>Лучшие товары</p>
+            </div>
+            <div className={styles.bestProducts}>
+                {BestProducts.map((product) => (
+                    <BestProduct
+                        key={product.id}
+                        url={product.url}
+                        title={product.title}
+                    />
+                    ))}
+            </div>
         </div>
-        <img src={frogBest} alt="MainToy" className={styles.mainImage}></img>
-        <img src={bunnyBest} alt="MainToy" className={styles.mainImage}></img>
-        <img src={smallBunnyBest} alt="MainToy" className={styles.mainImage}></img>
     </div>
  );
 }

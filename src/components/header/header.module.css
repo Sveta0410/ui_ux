@@ -50,12 +50,12 @@
 .headerName {
     display: flex;
     align-items: center;
-    margin-right: 20px;
 }
 
 .headerIcons{
     display: flex;
     align-items: center;
+    margin-left: 25.3px;
 }
 
 .headerIcon{
