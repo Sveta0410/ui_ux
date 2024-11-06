@@ -4,6 +4,7 @@
     align-items: center;
     justify-content: space-around;
     padding: 70px 0;
+    
 
 }
 
@@ -25,7 +26,7 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding: 80px 20px 0;
+    margin: 80px 0;
 }
 
 .bestHeaderBlock{
@@ -52,6 +53,7 @@
     align-items: center;
     justify-content: space-around;
     margin: 40px 0;
+    padding-top: 20px; 
 }
 
 .aboutUsSection{
