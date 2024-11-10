@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import styles from './product.module.css';
 import { useParams } from 'react-router-dom';
 import { Products } from '../../consts/products';
-import { Heart, Flower } from 'lucide-react';
+import { Heart } from 'lucide-react';
 import ProductDescription from '../../components/productDescription';
 
 
@@ -41,15 +41,11 @@ function Product() {
     
     return (
         <div className={styles.productPage}>          
-            
             <img src={productInfo?.url} className={styles.productImage}/>
             <div className={styles.productblock}>
                 <div className={styles.productInfoRectangle}>
                     <p className={styles.productTitle}>{productInfo?.title}</p>
-                    <div className={styles.priceAndFlower}>
-                        <p className={styles.productPrice}>{productInfo?.price} ₽</p>
-                        {/* <Flower className={styles.rotatedFlower}  /> */}
-                    </div>
+                    <p className={styles.productPrice}>{productInfo?.price} ₽</p>
                     <div className={styles.buyAndHeart}>
                         <button>Купить</button>
                         <Heart color='#FF94A6' size={50} strokeWidth={2.5}/>

@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 
 const ProductCard = ({ id, image, price, title}) => (
     <div className={styles.productRectangle}>
-        <img src={image} alt="toy" className={styles.image}></img>
+        <img src={image} alt="toy" className={styles.image}/>
         <div className={styles.priceAndBuy}>
             <p className={styles.price}>{price} ₽</p>
             <button>

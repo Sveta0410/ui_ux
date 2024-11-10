@@ -43,7 +43,8 @@
     font-size: 40px;
     color: #5c8f62;
     font-weight: 800;
-    margin: 0;
+    margin: 30px;
+    margin-top: 0;
 }
 
 .productInfoRectangle button {
@@ -67,14 +68,6 @@
     display: flex;
     align-items: center;
     margin-bottom: 35px;
-}
-
-.priceAndFlower{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 30px;
-    margin-top: 0;
 }
 
 .rotatedFlower{
