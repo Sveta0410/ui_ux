@@ -3,15 +3,65 @@
     flex-direction: row;
     justify-content: center;
     padding-top: 20px;
-    color: white;
 }
 
+.productImage {
+    width: 500px;
+    border-radius: 30px;
+}
+
+.productblock{
+    flex-direction: column;
+
+}
 .productInfoRectangle {
     display: flex;
     flex-direction: column;
-    width: 210px;
-    height: 270px;
+    width: 450px;
+    height: 400px;
     background: white;
     border-radius: 30px;
     margin: 10px;
+}
+
+.productTitle{
+    font-family: "Inter", sans-serif;
+    font-size: 48px;
+    color: #5c8f62;
+    font-weight: 400;
+    margin: 30px;
+}
+
+.productInfoText{
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    color: white;
+    font-weight: 200;
+    margin: 25px;
+}
+
+.productPrice{
+    font-family: "Inter", sans-serif;
+    font-size: 48px;
+    color: #5c8f62;
+    font-weight: 800;
+    margin: 30px;
+    margin-top: 0;
+}
+
+.productInfoRectangle button {
+    width: 295px;
+    height: 60px;
+    border: transparent;
+    color: white;
+    background: #5c8f62;
+    font-size: 32px;
+    cursor: pointer;
+    border-radius: 30px; 
+    margin: 30px;
+    margin-top: 0;
+}
+
+.productInfoRectangle button:hover {
+    box-shadow: 0 0 5px rgba(92,143,98, 10)
 }
