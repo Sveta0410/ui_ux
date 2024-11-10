@@ -1,52 +1,49 @@
 .productPage {
     display: flex;
-    flex-direction: row;
     justify-content: center;
     padding-top: 20px;
+    padding-bottom: 35px;
 }
 
 .productImage {
-    width: 500px;
+    width: 550px;
     border-radius: 30px;
 }
 
 .productblock{
     flex-direction: column;
-
+    margin: 0 50px;
 }
+
 .productInfoRectangle {
     display: flex;
     flex-direction: column;
     width: 450px;
-    height: 400px;
     background: white;
     border-radius: 30px;
-    margin: 10px;
 }
 
 .productTitle{
     font-family: "Inter", sans-serif;
-    font-size: 48px;
+    font-size: 40px;
     color: #5c8f62;
     font-weight: 400;
     margin: 30px;
 }
 
-.productInfoText{
+.productAuthor{
     font-family: "Inter", sans-serif;
     font-size: 20px;
     color: white;
     font-weight: 200;
-    margin: 25px;
 }
 
 .productPrice{
     font-family: "Inter", sans-serif;
-    font-size: 48px;
+    font-size: 40px;
     color: #5c8f62;
     font-weight: 800;
-    margin: 30px;
-    margin-top: 0;
+    margin: 0;
 }
 
 .productInfoRectangle button {
@@ -58,10 +55,34 @@
     font-size: 32px;
     cursor: pointer;
     border-radius: 30px; 
-    margin: 30px;
-    margin-top: 0;
+    margin: 0 30px;
+
 }
 
 .productInfoRectangle button:hover {
     box-shadow: 0 0 5px rgba(92,143,98, 10)
+}
+
+.buyAndHeart{
+    display: flex;
+    align-items: center;
+    margin-bottom: 35px;
+}
+
+.priceAndFlower{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px;
+    margin-top: 0;
+}
+
+.rotatedFlower{
+    color: #5c8f62;
+    width: 85px;
+    height: 85px;
+    transform: rotate(25deg);
+    opacity: 0.15;
+    stroke-width: 1;
+    margin-right: 50px;
 }

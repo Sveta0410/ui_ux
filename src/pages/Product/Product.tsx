@@ -2,7 +2,9 @@ import React, { useEffect, useState } from 'react';
 import styles from './product.module.css';
 import { useParams } from 'react-router-dom';
 import { Products } from '../../consts/products';
-import { Heart } from 'lucide-react';
+import { Heart, Flower } from 'lucide-react';
+import ProductDescription from '../../components/productDescription';
+
 
 
 
@@ -44,14 +46,17 @@ function Product() {
             <div className={styles.productblock}>
                 <div className={styles.productInfoRectangle}>
                     <p className={styles.productTitle}>{productInfo?.title}</p>
-                    <p className={styles.productPrice}>{productInfo?.price} ₽</p>
-                    <button>Купить</button>
-                    <Heart color={'#FF94A6'}/>
-
-                    
+                    <div className={styles.priceAndFlower}>
+                        <p className={styles.productPrice}>{productInfo?.price} ₽</p>
+                        {/* <Flower className={styles.rotatedFlower}  /> */}
+                    </div>
+                    <div className={styles.buyAndHeart}>
+                        <button>Купить</button>
+                        <Heart color='#FF94A6' size={50} strokeWidth={2.5}/>
+                    </div> 
                 </div>
-                <p className={styles.productInfoText}>{productInfo?.description}</p>
-                <p className={styles.productInfoText}>Автор схемы: {fullName}</p>
+                <ProductDescription text={productInfo?.description} />
+                <p className={styles.productAuthor}>Автор схемы: {fullName}</p>
             </div>
        </div>
     );
