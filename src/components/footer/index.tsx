@@ -12,7 +12,7 @@ const Footer = () => {
                     <div className={styles.footerColumns}>
                         <div className={styles.footerColumn}>
                             <p><Link to="/" className={styles.footerLink}>О нас</Link></p>
-                            <p><Link to="/" className={styles.footerLink}>Контакты</Link></p>
+                            <p><Link to="/contacts" className={styles.footerLink}>Контакты</Link></p>
                         </div>
                     </div>
                 </div>

@@ -1,11 +1,15 @@
 import styles from './filterElem.module.css';
 import React from 'react';
-import { ChevronDown } from 'lucide-react';
+import { Circle, CheckCircle } from 'lucide-react';
 
-const FilterElem = ({ elemName, onClick }) => {
+const FilterElem = ({ elemName, onClick, isSelected }) => {
     return (
         <div className={styles.filterListElem} onClick={onClick}>
-            <ChevronDown color="black" size={25} strokeWidth={1}/>
+            {isSelected ? (
+                <CheckCircle color="black" size={20} strokeWidth={1} />
+            ) : (
+                <Circle color="gray" size={20} strokeWidth={1} />
+            )}
             <p className={styles.filterName}>{elemName}</p>
         </div>
     );
