@@ -1,7 +1,7 @@
 import React from "react";
 import styles from './home.module.css';
 import mainToy from '/src/assets/doll.jpg';
-import aboutUsToy from '/src/assets/bestToys/smallBunnyBest.svg';
+import aboutUsToy from '/images/bestToys/smallBunnyBest.svg';
 import BestProduct from "../../components/bestProduct";
 import { BestProducts } from "../../consts/bestProducts";
 import { AboutUsText } from "../../consts/aboutUs";

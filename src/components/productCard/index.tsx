@@ -1,8 +1,6 @@
 import { ShoppingCart } from 'lucide-react';
 import styles from './productCard.module.css';
 import React from 'react';
-import { Link } from 'react-router-dom';
-
 
 
 const ProductCard = ({ id, image, price, title}) => (

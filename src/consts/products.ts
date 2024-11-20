@@ -3,7 +3,7 @@ export const Products = [
     title: 'Розовая коровка',
     id: 1,
     price: 1000,
-    url: '/src/assets/toys/cow.png',
+    url: '/images/toys/cow.png',
     description: ['Авторская игрушка ручной работы', 'Размер: 15*10 см'],
     type: 'Игрушка',
     size: 150, // 15 * 10
@@ -13,7 +13,7 @@ export const Products = [
     title: 'Динозаврик Жора',
     id: 2,
     price: 350,
-    url: '/src/assets/toys/dino.png',
+    url: '/images/toys/dino.png',
     description: ['Авторская игрушка ручной работы', 'Размер: 10*7 см'],
     type: 'Игрушка',
     size: 70, // 10 * 7
@@ -23,7 +23,7 @@ export const Products = [
     title: 'Мышка',
     id: 3,
     price: 350,
-    url: '/src/assets/toys/mouse.png',
+    url: '/images/toys/mouse.png',
     description: ['Авторская игрушка ручной работы', 'Размер: 5*10 см'],
     type: 'Игрушка',
     size: 50, // 5 * 10
@@ -33,7 +33,7 @@ export const Products = [
     title: 'Мини лягушка',
     id: 4,
     price: 250,
-    url: '/src/assets/toys/tiny_frog.png',
+    url: '/images/toys/tiny_frog.png',
     description: ['Авторская игрушка ручной работы', 'Размер: 5*5 см'],
     type: 'Игрушка',
     size: 25, // 5 * 5
@@ -43,7 +43,7 @@ export const Products = [
     title: 'Кукла Розалин',
     id: 5,
     price: 2500,
-    url: '/src/assets/toys/doll.png',
+    url: '/images/toys/doll.png',
     description: ['Авторская игрушка ручной работы', 'Размер: 20*10 см'],
     type: 'Игрушка',
     size: 200, // 20 * 10
@@ -53,7 +53,7 @@ export const Products = [
     title: 'Кролик малыш',
     id: 6,
     price: 2000,
-    url: '/src/assets/toys/tiny_bunny.png',
+    url: '/images/toys/tiny_bunny.png',
     description: ['Авторская игрушка ручной работы', 'Размер: 10*7 см'],
     type: 'Игрушка',
     size: 70, // 10 * 7
@@ -63,7 +63,7 @@ export const Products = [
     title: 'Веселая лягушка',
     id: 7,
     price: 400,
-    url: '/src/assets/toys/frog.png',
+    url: '/images/toys/frog.png',
     description: ['Авторская игрушка ручной работы', 'Размер: 15*10 см'],
     type: 'Игрушка',
     size: 150, // 15 * 10
@@ -73,7 +73,7 @@ export const Products = [
     title: 'Подставка весенняя',
     id: 8,
     price: 1000,
-    url: '/src/assets/toys/flower_coaster.png',
+    url: '/images/toys/flower_coaster.png',
     description: ['Авторская игрушка ручной работы', 'Размер: 9*9 см'],
     type: 'Подставка',
     size: 81, // 9 * 9
@@ -83,7 +83,7 @@ export const Products = [
     title: 'Медуза Марина',
     id: 9,
     price: 700,
-    url: '/src/assets/toys/octopus.png',
+    url: '/images/toys/octopus.png',
     description: ['Авторская игрушка ручной работы', 'Размер: 3*7 см'],
     type: 'Игрушка',
     size: 21, // 3 * 7
@@ -93,7 +93,7 @@ export const Products = [
     title: 'Лягушка-квакушка',
     id: 10,
     price: 2300,
-    url: '/src/assets/toys/frog_small.png',
+    url: '/images/toys/frog_small.png',
     description: ['Авторская игрушка ручной работы', 'Размер: 10*5 см'],
     type: 'Игрушка',
     size: 50, // 10 * 5
@@ -103,7 +103,7 @@ export const Products = [
     title: 'Мишка',
     id: 11,
     price: 1000,
-    url: '/src/assets/toys/bear.png',
+    url: '/images/toys/bear.png',
     description: ['Авторская игрушка ручной работы', 'Размер: 15*7 см'],
     type: 'Игрушка',
     size: 105, // 15 * 7
@@ -113,7 +113,7 @@ export const Products = [
     title: 'Зайка Настя',
     id: 12,
     price: 1700,
-    url: '/src/assets/toys/bunny.png',
+    url: '/images/toys/bunny.png',
     description: ['Авторская игрушка ручной работы', 'Размер: 30*20 см'],
     type: 'Игрушка',
     size: 600, // 30 * 20
