@@ -9,7 +9,7 @@ import ProductDescription from '../../components/productDescription';
 
 
 function Product() {
-    const [fullName, setFullName] = useState("");
+    const [fullName, setFullName] = useState<string>();
     useEffect(() => {
         async function getRandomFullName() {
             try {
@@ -25,7 +25,6 @@ function Product() {
                 const lastName = data.results[0].name.last;
 
                 const fullName = `${firstName} ${lastName}`;
-                localStorage.setItem('randomFullName', fullName);
                 setFullName(fullName);
             } catch (error) {
                 console.error('Ошибка при получении имени:', error);
@@ -34,7 +33,7 @@ function Product() {
 
         // Вызываем функцию один раз при монтировании компонента
         getRandomFullName();
-    }, []); // Пустой массив зависимостей означает, что useEffect вызывается только один раз при монтировании
+    }, []);
 
     const {id} = useParams();
     const productInfo = Products.find(product => product.id === Number(id))
@@ -47,7 +46,7 @@ function Product() {
                     <p className={styles.productTitle}>{productInfo?.title}</p>
                     <p className={styles.productPrice}>{productInfo?.price} ₽</p>
                     <div className={styles.buyAndHeart}>
-                        <button>Купить</button>
+                        <button onClick={event =>  window.location.href=`/contacts`}>Купить</button>
                         <Heart color='#FF94A6' size={50} strokeWidth={2.5}/>
                     </div> 
                 </div>

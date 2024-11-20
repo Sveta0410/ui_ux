@@ -6,6 +6,9 @@ import Product from './pages/Product/Product';
 import { Header } from './components/header';
 import Layout from './components/Layout';
 import Footer from './components/footer';
+import Contacts from './pages/Contacts/Contacts';
+
+
 function App() {
 return (
     <Router>
@@ -14,6 +17,7 @@ return (
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/catalog" element={<Catalog />} />
+                <Route path="/contacts" element={<Contacts />} />
                 <Route path="/product/:id" element={<Product />} />
             </Routes>
             <Footer />
