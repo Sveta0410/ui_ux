@@ -1,11 +1,14 @@
 .mainSection{
-    
+    display: flex;
     width: 100%;
     align-items: center;
-    justify-content: space-around;
-    padding: 35px;
-    
+    /* justify-content: center; */
+    /* justify-content: space-evenly; */
+}
 
+.infoSection{
+    width: 100%;
+    padding: 35px;
 }
 
 .name {
@@ -34,4 +37,17 @@
     color: white;
     font-weight: 400; 
     padding: 10px;
+}
+
+.contactsImage{
+    height: 500px;
+    padding-left: 200px;
+    padding-right: 20px;
+}
+
+.imageSection{
+    /* width: 100%; */
+    display: flex;
+    justify-content: center;
+
 }
